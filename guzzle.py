@@ -12,6 +12,7 @@ def guzzle_cake():
     pg.moveTo(cake)
     pg.click()
     pg.moveTo(current_pos)
+    pg.click()
 
 if __name__ == "__main__":
     sleepy(15, 0.5)
