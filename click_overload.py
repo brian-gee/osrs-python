@@ -13,5 +13,6 @@ def click_overload():
     sleepy(3, 0.5)
 
 if __name__ == "__main__":
+    sleepy(2, 0.5)
     while (pg.locateOnScreen('nmz.png', confidence=0.9) is not None):
         click_overload()
