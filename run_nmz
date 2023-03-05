@@ -1,4 +1,0 @@
-#!/bin/sh
-timeout 6h python3 click_overload.py &
-timeout 6h python3 guzzle.py &
-# timeout 6h python click_absorb.py &
