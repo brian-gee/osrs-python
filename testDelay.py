@@ -5,13 +5,11 @@ import random
 
 def click_overload():
     current_pos = pg.position()
-    overload = pg.locateOnScreen('cyan-overload.png', confidence=0.9)
+    overload = pg.locateOnScreen('delayClick.png')
     pg.click(overload)
     pg.moveTo(current_pos)
-    sleep(300)
-    print('Overload')
-    sleepy(3, 0.5)
+    print('Clicked')
 
 if __name__ == "__main__":
-    sleepy(2, 0.5)
+  while True: 
     click_overload()
