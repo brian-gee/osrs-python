@@ -14,7 +14,7 @@ def guzzle_cake():
     pg.moveTo(current_pos)
 
 if __name__ == "__main__":
-    sleepy(15, 0.5)
+    sleepy(5, 0.5)
     while (pg.locateOnScreen('nmz.png', confidence=0.9) is not None):
         guzzle_cake()
         print("Guzzle")
