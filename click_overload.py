@@ -5,7 +5,7 @@ import random
 
 def click_overload():
     current_pos = pg.position()
-    overload = pg.locateOnScreen('overload.png', confidence=0.9)
+    overload = pg.locateOnScreen('cyan-overload.png', confidence=0.9)
     pg.click(overload)
     pg.moveTo(current_pos)
     sleep(300)
@@ -14,5 +14,4 @@ def click_overload():
 
 if __name__ == "__main__":
     sleepy(2, 0.5)
-    while (pg.locateOnScreen('nmz.png', confidence=0.9) is not None):
-        click_overload()
+    click_overload()
