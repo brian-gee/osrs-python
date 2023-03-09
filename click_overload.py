@@ -8,6 +8,7 @@ def click_overload():
     overload = pg.locateOnScreen('cyan-overload.png', confidence=0.9)
     pg.click(overload)
     pg.moveTo(current_pos)
+    sleep(300)
     print('Overload')
     sleepy(3, 0.5)
 
